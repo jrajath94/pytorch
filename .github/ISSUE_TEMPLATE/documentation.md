@@ -1,7 +1,6 @@
 ---
 name: "\U0001F4DA Documentation"
 about: Report an issue related to https://pytorch.org/docs
-
 ---
 
 ## 📚 Documentation
