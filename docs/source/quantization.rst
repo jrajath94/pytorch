@@ -162,8 +162,8 @@ Operations that are available from the ``torch`` namespace or as methods on Tens
 
 Basic activations are supported.
 
-* :meth:`~torch.nn.functional.relu` — Rectified linear unit (copy)
-* :meth:`~torch.nn.functional.relu_` — Rectified linear unit (inplace)
+* :meth:`~torch.nn.functional.relu` - Rectified linear unit (copy)
+* :meth:`~torch.nn.functional.relu_` - Rectified linear unit (inplace)
 * :meth:`~torch.nn.functional.max_pool2d` - Maximum pooling 
 * :meth:`~torch.nn.functional.adaptive_avg_pool2d` - Adaptive average pooling
 * :meth:`~torch.nn.functional.avg_pool2d` - Average pooling
@@ -198,8 +198,8 @@ Fused modules are provided for common patterns in CNNs. Combining several operat
 
 Layers for the quantization-aware training
 
-* :class:`~torch.nn.qat.Linear` — Linear (fully-connected) layer
-* :class:`~torch.nn.qat.Conv2d` — 2D convolution
+* :class:`~torch.nn.qat.Linear` - Linear (fully-connected) layer
+* :class:`~torch.nn.qat.Conv2d` - 2D convolution
 
 ``torch.quantization``
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -250,16 +250,16 @@ Observers for computing the quantization parameters
 
 Quantized version of standard NN layers.
 
-* :class:`~torch.nn.quantized.Quantize` — Quantization layer, used to automatically replace :class:`~torch.quantization.QuantStub`
-* :class:`~torch.nn.quantized.DeQuantize` — Dequantization layer, used to replace :class:`~torch.quantization.DeQuantStub`
-* :class:`~torch.nn.quantized.FloatFunctional` — Wrapper class to make stateless float operations stateful so that they can be replaced with quantized versions
-* :class:`~torch.nn.quantized.QFunctional` — Wrapper class for quantized versions of stateless operations like ```torch.add``
-* :class:`~torch.nn.quantized.Conv2d` — 2D convolution
-* :class:`~torch.nn.quantized.Conv3d` — 3D convolution
-* :class:`~torch.nn.quantized.Linear` — Linear (fully-connected) layer
-* :class:`~torch.nn.MaxPool2d` — 2D max pooling
-* :class:`~torch.nn.quantized.ReLU` — Rectified linear unit
-* :class:`~torch.nn.quantized.ReLU6` — Rectified linear unit with cut-off at quantized representation of 6
+* :class:`~torch.nn.quantized.Quantize` - Quantization layer, used to automatically replace :class:`~torch.quantization.QuantStub`
+* :class:`~torch.nn.quantized.DeQuantize` - Dequantization layer, used to replace :class:`~torch.quantization.DeQuantStub`
+* :class:`~torch.nn.quantized.FloatFunctional` - Wrapper class to make stateless float operations stateful so that they can be replaced with quantized versions
+* :class:`~torch.nn.quantized.QFunctional` - Wrapper class for quantized versions of stateless operations like ```torch.add``
+* :class:`~torch.nn.quantized.Conv2d` - 2D convolution
+* :class:`~torch.nn.quantized.Conv3d` - 3D convolution
+* :class:`~torch.nn.quantized.Linear` - Linear (fully-connected) layer
+* :class:`~torch.nn.MaxPool2d` - 2D max pooling
+* :class:`~torch.nn.quantized.ReLU` - Rectified linear unit
+* :class:`~torch.nn.quantized.ReLU6` - Rectified linear unit with cut-off at quantized representation of 6
 
 ``torch.nn.quantized.dynamic``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,17 +274,17 @@ Layers used in dynamically quantized models (i.e. quantized only on weights)
 
 Functional versions of quantized NN layers (many of them accept explicit quantization output parameters)
 
-* :func:`~torch.nn.quantized.functional.adaptive_avg_pool2d` — 2D adaptive average pooling
-* :func:`~torch.nn.quantized.functional.avg_pool2d` — 2D average pooling
-* :func:`~torch.nn.quantized.functional.conv2d` — 2D convolution
-* :func:`~torch.nn.quantized.functional.conv3d` — 3D convolution
-* :func:`~torch.nn.quantized.functional.interpolate` — Down-/up- sampler
-* :func:`~torch.nn.quantized.functional.linear` — Linear (fully-connected) op
-* :func:`~torch.nn.quantized.functional.max_pool2d` — 2D max pooling
-* :func:`~torch.nn.quantized.functional.relu` — Rectified linear unit
-* :func:`~torch.nn.quantized.functional.upsample` — Upsampler. Will be deprecated in favor of :func:`~torch.nn.quantized.functional.interpolate`
-* :func:`~torch.nn.quantized.functional.upsample_bilinear` — Bilenear upsampler. Will be deprecated in favor of :func:`~torch.nn.quantized.functional.interpolate`
-* :func:`~torch.nn.quantized.functional.upsample_nearest` — Nearest neighbor upsampler. Will be deprecated in favor of :func:`~torch.nn.quantized.functional.interpolate`
+* :func:`~torch.nn.quantized.functional.adaptive_avg_pool2d` - 2D adaptive average pooling
+* :func:`~torch.nn.quantized.functional.avg_pool2d` - 2D average pooling
+* :func:`~torch.nn.quantized.functional.conv2d` - 2D convolution
+* :func:`~torch.nn.quantized.functional.conv3d` - 3D convolution
+* :func:`~torch.nn.quantized.functional.interpolate` - Down-/up- sampler
+* :func:`~torch.nn.quantized.functional.linear` - Linear (fully-connected) op
+* :func:`~torch.nn.quantized.functional.max_pool2d` - 2D max pooling
+* :func:`~torch.nn.quantized.functional.relu` - Rectified linear unit
+* :func:`~torch.nn.quantized.functional.upsample` - Upsampler. Will be deprecated in favor of :func:`~torch.nn.quantized.functional.interpolate`
+* :func:`~torch.nn.quantized.functional.upsample_bilinear` - Bilenear upsampler. Will be deprecated in favor of :func:`~torch.nn.quantized.functional.interpolate`
+* :func:`~torch.nn.quantized.functional.upsample_nearest` - Nearest neighbor upsampler. Will be deprecated in favor of :func:`~torch.nn.quantized.functional.interpolate`
 
 Quantized dtypes and quantization schemes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
